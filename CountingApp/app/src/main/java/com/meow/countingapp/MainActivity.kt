@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -43,16 +44,21 @@ fun CounterScreen(viewModel: CounterViewModel) {
     // Observe the counter value from the ViewModel
     val count by viewModel.count
 
-    // Display the counter and buttons in a column
-    Column( horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "Count: $count", style = MaterialTheme.typography.headlineMedium)
+    // Use Box to center the content both horizontally and vertically
+    Box(
+        modifier = Modifier.fillMaxSize(), // Make the Box fill the whole screen
+        contentAlignment = Alignment.Center // Center content within the Box
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text(text = "Count: $count", style = MaterialTheme.typography.headlineMedium)
 
-        Row {
-            Button(onClick = { viewModel.incrementCount() },modifier = Modifier.padding(8.dp)) {
-                Text(text = "Increment")
-            }
-            Button(onClick = { viewModel.decrementCount() },modifier = Modifier.padding(8.dp)) {
-                Text(text = "Decrement")
+            Row {
+                Button(onClick = { viewModel.incrementCount() }, modifier = Modifier.padding(8.dp)) {
+                    Text(text = "Increment")
+                }
+                Button(onClick = { viewModel.decrementCount() }, modifier = Modifier.padding(8.dp)) {
+                    Text(text = "Decrement")
+                }
             }
         }
     }}
