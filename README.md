@@ -1,4 +1,3 @@
-Kotlin & Jetpack Compose Android Apps
 Welcome to my Android apps repository! This repository contains various Android applications that I have developed using Kotlin and Jetpack Compose. Each app is built following the MVVM architecture to ensure a scalable and maintainable codebase.
 
 Table of Contents
