@@ -30,7 +30,7 @@ To clone and run any of these apps, follow these steps:
 Clone this repository:
 bash
 Copy code
-git clone https://github.com/your-username/your-repo-name.git
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/whitedevil-ragnor/Android-Apps/tree/Android-Kotlin-Jetpack)
 Open the project in Android Studio.
 Let Android Studio build the project.
 Run the app on an emulator or a physical device.
