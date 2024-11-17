@@ -1,4 +1,4 @@
-package com.meow.countingapp.ui.theme
+package com.meow.countingapp
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State

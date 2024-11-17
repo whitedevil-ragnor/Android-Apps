@@ -17,12 +17,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.meow.countingapp.ui.theme.CounterViewModel
 import com.meow.countingapp.ui.theme.CountingAppTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -43,7 +41,6 @@ class MainActivity : ComponentActivity() {
 fun CounterScreen(viewModel: CounterViewModel) {
     // Observe the counter value from the ViewModel
     val count by viewModel.count
-
     // Use Box to center the content both horizontally and vertically
     Box(
         modifier = Modifier.fillMaxSize(), // Make the Box fill the whole screen
@@ -51,7 +48,6 @@ fun CounterScreen(viewModel: CounterViewModel) {
     ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(text = "Count: $count", style = MaterialTheme.typography.headlineMedium)
-
             Row {
                 Button(onClick = { viewModel.incrementCount() }, modifier = Modifier.padding(8.dp)) {
                     Text(text = "Increment")
