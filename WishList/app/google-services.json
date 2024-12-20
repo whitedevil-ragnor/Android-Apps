@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746755809378",
+    "project_id": "wishlist-7e708",
+    "storage_bucket": "wishlist-7e708.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746755809378:android:294fe19af62724b5d4713b",
+        "android_client_info": {
+          "package_name": "com.meow.wishlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVdHaUehKPxGpnhIKwN6Qr55ojcsa1F8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

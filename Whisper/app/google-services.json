@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148695607944",
+    "project_id": "whisper-2068e",
+    "storage_bucket": "whisper-2068e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148695607944:android:cbdecca18ee7a535a0cd3d",
+        "android_client_info": {
+          "package_name": "com.meow.whisper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHFwUbM8GWRSPnLpVdADgKIxsBI76wm14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
